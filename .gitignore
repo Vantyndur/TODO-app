@@ -1,0 +1,39 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+# Build outputs
+build/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/ServiceDefinitions.json
+android/app/debug
+android/app/profile
+android/app/release
+
+# Symbolication / coverage
+*.symbols
+coverage/
+*.lcov
+
+# Obfuscation / generated
+app.*.map.json
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.gradle/
+local.properties
+
+# VS Code
+.vscode/
+
+# Misc
+*.log
+*.tmp
+*.swp
+*.lock
+.DS_Store
