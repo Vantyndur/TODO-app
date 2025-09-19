@@ -67,7 +67,7 @@ class TasksController {
     required BuildContext context,
   }) {
     try {
-      highestId = highestId+1;
+      highestId = highestId + 1;
       Task task = Task(
         // id: highestId,
         name: name,
