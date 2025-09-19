@@ -26,13 +26,13 @@ class TasksController {
         } else if (snapshot.hasData) {
           // If the future completed successfully
           tasks = snapshot.data;
-          tasks.forEach((task) {
+          for (var task in tasks) {
             if (task.id != null) {
               if (task.id! > highestId) {
                 highestId = task.id!;
               }
             }
-          });
+          }
           return TasksView(controller: this);
         } else {
           // If the future is null or has no data
