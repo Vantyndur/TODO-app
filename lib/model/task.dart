@@ -1,6 +1,6 @@
 import 'package:lista_zadan/model/datetime_extension.dart';
 
-import 'priority.dart';
+import 'package:lista_zadan/model/priority.dart';
 
 class Task {
   Task({
@@ -27,6 +27,6 @@ class Task {
 
   @override
   String toString() {
-    return 'Task{id: $id, name: $name, description: $description,dateOfBeginning: dateOfBeginning ,priority: $priority}';
+    return 'Task{id: $id, name: $name, description: $description,dateOfBeginning: ${dateOfBeginning.toDb()} ,priority: ${priority.toString()}}';
   }
 }
